@@ -17,10 +17,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start":"react-scripts start",
+    "start":"concurrently --kill-others \"react-scripts start\" \"json-server --watch data.json --port 3009\"",
     "build": "react-scripts build",
     "predeploy":"yarn run build",
-    "deploy": "concurrently --kill-others \"gh-pages -d build\" \"json-server --watch data.json --port 3009\"",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
