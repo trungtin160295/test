@@ -1,7 +1,6 @@
 import {useState}from 'react'
 import { useParams } from "react-router-dom";
 import useFetch from "../customize/fetch";
-import useSrt from "../customize/str"
 import ListProduct from '../Components/ListProduct';
 
 import '../style/pageSeach.scss';
@@ -46,7 +45,7 @@ export  default function Seach () {
                 dataProducts ={dataProducts}
               />
             }
-             { isLoading === false && dataProducts.length == 0 &&
+             { isLoading == false && dataProducts.length == 0 &&
            <div style={{margin: "30px",textAlign:"center"}}>
               Sản phẩm này chưa trình bán.
               <br/>

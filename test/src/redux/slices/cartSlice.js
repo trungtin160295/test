@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 // export const fetchCart = createAsyncThunk("cart/fetchCart", async () => {
 //   let data = await axios
